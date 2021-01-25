@@ -35,7 +35,7 @@ jobs:
             - name: 'E2E: Prepare'
               run: npm run ci:e2e:prepare
             - name: 'E2E: Run'
-              run: npm run ci:e2e:run -- --record
+              run: npm run ci:e2e:run
               env:
                 CYPRESS_PROJECT_ID: ${{ secrets.JHIPSTER_CYPRESS_PROJECT_ID }}
                 CYPRESS_RECORD_KEY: ${{ secrets.JHIPSTER_CYPRESS_RECORD_KEY }}
