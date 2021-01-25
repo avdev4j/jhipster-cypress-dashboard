@@ -39,5 +39,6 @@ jobs:
               env:
                 CYPRESS_PROJECT_ID: ${{ secrets.JHIPSTER_CYPRESS_PROJECT_ID }}
                 CYPRESS_RECORD_KEY: ${{ secrets.JHIPSTER_CYPRESS_RECORD_KEY }}
+                IS_RECORDED: true
             - name: 'E2E: Teardown'
               run: npm run ci:e2e:teardown
